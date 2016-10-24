@@ -13,7 +13,6 @@
 @end
 
 @implementation TLTagsControl {
-    UITextField                 *tagInputField_;
     NSMutableArray              *tagSubviews_;
 }
 

@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, TLTagsControlMode) {
 
 @interface TLTagsControl : UIScrollView
 
+@property (nonatomic, strong) UITextField *tagInputField_;
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, strong) UIColor *tagsBackgroundColor;
 @property (nonatomic, strong) UIColor *tagsTextColor;
