@@ -196,8 +196,6 @@
     UIColor *tagTextColor = _tagsTextColor != nil ? _tagsTextColor : [UIColor darkGrayColor];
     UIColor *tagDeleteButtonColor = _tagsDeleteButtonColor != nil ? _tagsDeleteButtonColor : [UIColor blackColor];
     
-    
-    
     for (NSString *tag in _tags) {
         float width = [tag boundingRectWithSize:CGSizeMake(3000,self.tagInputField_.frame.size.height)
                                         options:NSStringDrawingUsesLineFragmentOrigin
@@ -220,6 +218,13 @@
         tagLabel.textAlignment = NSTextAlignmentCenter;
         tagLabel.clipsToBounds = YES;
         tagLabel.layer.cornerRadius = 5;
+        if (self.tagsBorderWidth > 0) {
+            tagLabel.layer.borderWidth = self.tagsBorderWidth;
+            tagLabel.layer.borderColor = self.tagsBorderColor.CGColor;
+        }
+        if (self.tagsCornerRadius) {
+            tagLabel.layer.cornerRadius = self.tagsCornerRadius;
+        }
         
         if (_mode == TLTagsControlModeEdit) {
             UIButton *deleteTagButton = [[UIButton alloc] initWithFrame:self.tagInputField_.frame];
