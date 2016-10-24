@@ -220,7 +220,7 @@
         tagLabel.layer.cornerRadius = 5;
         if (self.tagsBorderWidth > 0) {
             tagLabel.layer.borderWidth = self.tagsBorderWidth;
-            tagLabel.layer.borderColor = self.tagsBorderColor.CGColor;
+            tagLabel.layer.borderColor = self.tagsTextColor.CGColor;
         }
         if (self.tagsCornerRadius) {
             tagLabel.layer.cornerRadius = self.tagsCornerRadius;
