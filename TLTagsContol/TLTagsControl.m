@@ -224,6 +224,7 @@
         }
         if (self.tagsCornerRadius) {
             tagLabel.layer.cornerRadius = self.tagsCornerRadius;
+            tagLabel.clipsToBounds = YES;
         }
         
         if (_mode == TLTagsControlModeEdit) {
