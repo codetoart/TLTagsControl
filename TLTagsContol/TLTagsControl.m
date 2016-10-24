@@ -78,7 +78,7 @@
     self.tagInputField_.backgroundColor = [UIColor whiteColor];
     self.tagInputField_.delegate = self;
     self.tagInputField_.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
-    self.tagInputField_.placeholder = @"tag";
+    self.tagInputField_.placeholder = @"";
     self.tagInputField_.autocorrectionType = UITextAutocorrectionTypeNo;
     
     if (_mode == TLTagsControlModeEdit) {
