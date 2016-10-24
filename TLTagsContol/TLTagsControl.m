@@ -151,7 +151,7 @@
     
     self.contentSize = contentSize;
     
-    self.tagInputField_.placeholder = (_tagPlaceholder == nil) ? @"tag" : _tagPlaceholder;
+    self.tagInputField_.placeholder = (_tagPlaceholder == nil) ? @"" : _tagPlaceholder;
 }
 
 - (void)addTag:(NSString *)tag {
